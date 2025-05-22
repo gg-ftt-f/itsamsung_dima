@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/genres_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Язык" />
+
+    <Spinner
+        android:id="@+id/sp_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбранные жанры" />
+
+    <CheckBox
+        android:id="@+id/ch_fantasy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фантастика" />
+
+    <CheckBox
+        android:id="@+id/ch_science"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Научпоп" />
+
+    <CheckBox
+        android:id="@+id/ch_romance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Роман" />
+
+    <CheckBox
+        android:id="@+id/ch_mystery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Детектив" />
+
+    <CheckBox
+        android:id="@+id/ch_thriller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Триллер" />
+
+    <CheckBox
+        android:id="@+id/ch_horror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ужасы" />
+
+    <Button
+        android:id="@+id/btn_statuses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статусы" />
+
+</LinearLayout>

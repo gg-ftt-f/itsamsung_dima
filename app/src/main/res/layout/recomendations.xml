@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📚 Рекомендации"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 1) Поле для ввода поискового запроса -->
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Поиск книг"
+            android:backgroundTint="#DDDDDD"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 2) Кнопка «Найти» -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_genresList"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Список жанров" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_weight="1"
+                android:text="Найти" />
+        </LinearLayout>
+
+        <!-- 3) Здесь будет вывод результатов -->
+        <TextView
+            android:id="@+id/et_recomendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите запрос и нажмите «Найти»"
+            android:textColor="#333333" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</ScrollView>
